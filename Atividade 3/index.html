@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio 3</title>
+</head>
+
+<!-- __________________________ -->
+
+<style>
+
+#all_cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#box{
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-self: center;
+
+}
+
+.general_card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card1{
+    border: 1px solid red;
+    width: 55px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.card2{
+    border: 1px solid green;
+    width: 55px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+}
+
+.card3{
+    border: 1px solid blue;
+    width: 55px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+</style>
+
+<!-- __________________________ -->
+
+<body>
+    
+    <div id ="all_cards">
+        <div id="box">
+        </div>
+
+        <div class ="general_card">
+            <div class ="card1">
+            <input type="button" onclick="acionarBotao1()" value = "red">
+            </div>
+
+            <div class ="card2">
+            <input type="button" onclick="acionarBotao2()" value = "green">
+            </div>
+
+            <div class ="card3">
+            <input type="button" onclick="acionarBotao3()" value = "blue">
+            </div>
+        </div>
+    </div>
+
+  <!-- __________________________________ -->
+
+  <script>
+
+    function acionarBotao1(){
+        document.getElementById('box').style.backgroundColor = 'red';
+    }
+    function acionarBotao2(){
+        document.getElementById('box').style.backgroundColor = 'green';
+    }
+    function acionarBotao3(){
+        document.getElementById('box').style.backgroundColor = 'blue';
+    }
+  
+  </script>
+
+</body>
+</html>

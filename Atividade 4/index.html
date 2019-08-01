@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio 4</title>
+</head>
+<body>
+    <div class = "input.1">
+        <h4>First number:</h4>
+        <input type="number" name="number1" id="input1">
+    </div>
+    <br>
+    <div class = "input.2">
+        <h4>Second number:</h4>
+        <input type="number" name="number2" id="input2">
+    </div>
+    <br>
+    <div id = "botao">
+        <input type="button" onclick= document.write(calcular()) value = "Calcular">
+    </div>
+
+    <script>
+        
+        function calcular() {
+            var result = document.getElementById('input1').value * document
+                .getElementById('input2').value;
+            return result;
+        }
+        
+
+
+
+
+    //     function handleClick() {
+    //         var number1 = document.querySelector('[data-js="number1"]').value;
+    //         var number2 = document.querySelector('[data-js="number2"]').value;
+
+    //         document.querySelector('[data-js="result"]').innerHTML = calcular(number1, number2);
+    //     }
+
+    //    function calcular(number1, number2) {
+    //        return number1 * number2;
+    //    }
+
+    //    function verificar(){
+    //        if(document.getElementById("input1") & document.getElementById("input2") )
+    //    } 
+    </script>
+
+
+</body>
+</html>
